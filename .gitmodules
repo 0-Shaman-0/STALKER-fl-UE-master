@@ -1,0 +1,7 @@
+[submodule "Plugins/XRayEngine/Source/ThirdParty"]
+	path = Source/XRayEngine
+	url = https://github.com/RedPandaProjects/XRayEngine
+	branch = ue5
+[submodule "Source/Utils/XRayReTools"]
+	path = Source/Utils/XRayReTools
+	url = https://github.com/BearIvan/xray_re-tools

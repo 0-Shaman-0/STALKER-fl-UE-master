@@ -1,0 +1,26 @@
+class "opt_sound" (CUIWindow)
+
+function opt_sound:__init() super()
+end
+
+function opt_sound:__finalize()
+
+end
+
+function opt_sound:InitControls(x, y, xml, handler)
+
+	self:Init(x,y, 738, 416)
+	self:SetAutoDelete(true)
+	
+	self.bk = xml:InitFrame("frame", self)
+
+	xml:InitStatic("tab_sound:cap_mastervolume",		self)
+	xml:InitStatic("tab_sound:cap_musicvolume",			self)
+	xml:InitStatic("tab_sound:cap_effectsvolume", 		self)
+	
+	xml:InitTrackBar("tab_sound:track_effectsvolume", 	self)
+	xml:InitTrackBar("tab_sound:track_musicvolume",		self)
+	xml:InitTrackBar("tab_sound:track_mastervolume",	self)
+
+
+end
